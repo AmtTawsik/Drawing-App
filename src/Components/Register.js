@@ -21,11 +21,13 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setLoading(false)
         toast.success("User Created Successfully");
         form.reset();
         handleUpdateUserProfile(name, photo);
       })
       .catch((error) => console.log(error));
+      setLoading(false)
   };
 
   // Take UserName and Picture
