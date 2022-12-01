@@ -38,7 +38,6 @@ const Canvas = () => {
     download.setAttribute("href", image);
   }
 
-
   return (
     <div className="pb-5">
       <div className="App">
@@ -63,11 +62,15 @@ const Canvas = () => {
             Reset All
           </a>
         </button>
-        <button className="btn btn-info">
-          <a id="download" download="MubinImage.png" onClick={download}>
-            Download
-          </a>
-        </button>
+
+        <a
+          className="btn btn-info"
+          id="download"
+          download="MubinImage.png"
+          onClick={download}
+        >
+          Download
+        </a>
       </div>
     </div>
   );
