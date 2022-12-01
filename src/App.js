@@ -2,6 +2,7 @@ import { Toaster } from 'react-hot-toast';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Canvas from './Components/Canvas';
+import ContactUs from './Components/ContactUs';
 import ErrorPage from './Components/ErrorPage';
 import Header from './Components/Header';
 import Home from './Components/Home';
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([
       {
         path:'/register',
         element:<Register></Register>
+      },
+      {
+        path:'/contact',
+        element:<ContactUs></ContactUs>
       },
       {
         path:'/drawing',
